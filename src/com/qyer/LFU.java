@@ -94,7 +94,7 @@ public class LFU<k, v> {
 
     cache.put(5, 5);
     //目前2访问2次，1访问一次，4访问一次，由于4的时间比较新，放入5的时候移除1元素。
-    System.out.println("-=-=-=-");
+    System.out.println("-=-=-=");
     cache.cache.entrySet().forEach(entry -> {
       System.out.println(entry.getValue());
     });
